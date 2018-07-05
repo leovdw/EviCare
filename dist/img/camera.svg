@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="15px" viewBox="0 0 23 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Patients" transform="translate(-441.000000, -624.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-3" transform="translate(220.000000, 285.000000)">
+                <g id="Group" transform="translate(0.000000, 316.000000)">
+                    <path d="M243.896218,25.7336668 L243.896218,35.2569553 C243.896218,35.9931229 243.099093,36.4526415 242.461394,36.0869022 L238.49453,33.7986871 L238.49453,34.4504533 C238.49453,36.4104408 236.90497,38 234.944983,38 L224.549547,38 C222.589559,38 221,36.4104408 221,34.4504533 L221,26.5495467 C221,24.5895592 222.589559,23 224.549547,23 L234.949672,23 C236.909659,23 238.499219,24.5895592 238.499219,26.5495467 L238.499219,27.2013129 L242.466083,24.9130978 C243.099093,24.5379806 243.896218,25.0021882 243.896218,25.7336668 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
