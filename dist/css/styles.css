@@ -603,6 +603,50 @@ a {
     background-color: #3B8AFE;
     color: #FFF; }
 
+.slider {
+  background-color: #E2E2E2;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .slider h3 {
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold; }
+  @media (max-width: 900px) {
+    .slider {
+      display: none; } }
+  .slider .my-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .slider .my-slider .slider__card {
+      padding: 80px 60px;
+      width: 40px; }
+    .slider .my-slider div {
+      background-color: #D8D8D8; }
+      .slider .my-slider div img {
+        width: 134px;
+        height: 134px;
+        margin-right: 20px; }
+
+#tns1 > .tns-item {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.tns-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.tns-outer [aria-controls], .tns-outer [data-action] {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin: 10px 7px; }
+
 footer .footer__core {
   display: flex;
   justify-content: space-around;
