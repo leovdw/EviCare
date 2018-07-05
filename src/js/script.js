@@ -60,3 +60,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+
+
+var slider = tns({
+  container: '.my-slider',
+  items: 1,
+  slideBy: 'page',
+  // gutter: 80,
+  nav: true,
+  controls: false
+});

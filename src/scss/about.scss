@@ -23,6 +23,10 @@
     margin-top: 0;
     color: #28328C;
     font-weight: 700;
+
+    @media (max-width: 364px) {
+      width: 90%;
+    }
   }
   p{
     text-align: center;
