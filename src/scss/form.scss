@@ -1,9 +1,10 @@
 .form__coord{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     background: #fff;
+    min-height: 65vh;
 
     h2 {
       text-align: center;
@@ -32,25 +33,27 @@
     form{
       width: 90%;
       max-width: 408px;
-      margin-top: 75px;
-      margin-bottom: 100px;
-
     }
     input, select{
         font-size: 22px;
         width: 100%;
-        padding: 10px 10px 10px 15px;
-        box-shadow: inset 1px 1px 3px 0 #CCD1D9;
+        padding: 10px 10px 10px 30px;
+        box-shadow: inset 0px 0 5px 0 #CCD1D9;
         border-radius: 3px;
       	border: 1px solid #CCD1D9;
-        color: #AAB2BD
+        color: #AAB2BD;
+
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #AAB2BD;
+          opacity: 1; /* Firefox */
+        }
     }
     a{
         text-align: center;
         width: 100%;
         border-radius: 3px;
         padding: 15px;
-        background-color: #D8D8D8;
+        background-color: #3B8AFE;
         color: #FFF;
     }
 }

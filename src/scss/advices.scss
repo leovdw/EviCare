@@ -94,32 +94,10 @@
     border-radius: 24.5px;
     padding: 14px;
     width: 100px;
-    color: #3B8AFE;
+    color: white;
+    background-color: #3B8AFE;
     text-decoration: none;
     margin: 0 auto;
     text-align: center;
-    position: relative;
-    z-index: 5;
-
-    &::before{
-      position: absolute;
-      border-radius: 24.5px;
-      content: '';
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 0%;
-    	background-color: #3B8AFE;
-      z-index: -1;
-      transition: 1s ease all;
-      opacity: 0;
-    }
-    &:hover{
-      color: white;
-      &::before{
-        opacity: 1;
-        width: 100%;
-      }
-    }
   }
 }
