@@ -215,7 +215,7 @@ a {
   transform: none; }
 
 .section-intro {
-  height: calc(100vh - 70px);
+  min-height: calc(100vh - 70px);
   max-width: 900px;
   margin: 0 auto;
   width: 100%; }
@@ -356,7 +356,7 @@ a {
     color: white;
     width: 197px;
     align-self: center;
-    margin-top: 60px;
+    margin-top: 30px;
     text-align: center; }
     .section-infobox__btn:nth-of-type(2):after {
       background: url("../img/medecin.svg");
@@ -434,16 +434,21 @@ a {
     background-color: #D8D8D8;
     max-width: 376px;
     width: 100%; }
+    @media (max-width: 400px) {
+      .section-advices__boxes {
+        width: 90%; } }
     @media (max-width: 900px) {
       .section-advices__boxes {
         align-self: center;
         margin-top: 40px; }
         .section-advices__boxes:nth-of-type(1) {
           margin-top: 0; } }
+    .section-advices__boxes:nth-child(1) .section-advices__boxes__img {
+      background-image: url("../img/img-1.jpg"); }
+    .section-advices__boxes:nth-child(2) .section-advices__boxes__img {
+      background-image: url("../img/img-2.png"); }
     .section-advices__boxes__img {
       height: 246px; }
-      .section-advices__boxes__img svg:hover path {
-        fill: red; }
     .section-advices__boxes__info {
       border: 1px solid #C4C4C4;
       background-color: white;
@@ -514,8 +519,8 @@ a {
       justify-content: center; } }
   @media (max-width: 730px) {
     .section-about {
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 50px;
+      padding-bottom: 50px;
       flex-wrap: wrap;
       justify-content: center; } }
   .section-about h2 {
