@@ -63,11 +63,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 
-var slider = tns({
-  container: '.my-slider',
-  items: 1,
-  slideBy: 'page',
-  // gutter: 80,
-  nav: true,
-  controls: false
+$('.slide__wrap').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: false,
+  dots : true,
+  centerMode: true,
+  centerPadding: '250px',
+  arrows: false,
+  responsive: [
+   {
+     breakpoint: 1113,
+     settings: {
+       centerPadding: '40px',
+     }
+   },
+   {
+     breakpoint: 824,
+     settings: {
+       centerPadding: '0px',
+     }
+   }
+ ]
 });
