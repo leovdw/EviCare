@@ -1,7 +1,7 @@
 var btns = document.querySelectorAll('.btn-container a');
 var btns_active = document.querySelector('.active');
 
-  displayer('patient')
+displayer('patient');
 
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener('click', function () {
