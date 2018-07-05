@@ -1,54 +1,92 @@
 .slider{
-    background-color: #E2E2E2;
+    background-image: url('../img/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-bottom: 100px;
+    position: relative;
     h3{
         text-align: center;
         font-size: 33px;
         font-weight: bold;
-    }
-    @media (max-width: 900px) {
-        display: none;
+        color: white;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 
-    .my-slider{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .slider__card {
-            padding: 80px 60px;
-            width: 40px;
-        }
-        div{
-            background-color: #D8D8D8;
-            img{
-                width: 134px;
-                height: 134px;
-                margin-right: 20px;
+
+    .slide__wrap{
+
+      .slider__card {
+          margin: 0 50px;
+          display: flex;
+          background-color: white;
+          padding: 70px 50px;
+          border-radius: 10px;
+
+          @media (max-width: 627px) {
+            padding: 30px;
+          }
+          @media (max-width: 627px) {
+              flex-direction: column;
+              justify-content: center;
+          }
+      }
+      div{
+          h4{
+            @media (max-width: 627px) {
+              text-align: center;
             }
+          }
+
+          img{
+            width: 134px;
+            height: 134px;
+            margin-right: 50px;
+            align-self: center;
+
+            @media (max-width: 627px) {
+                align-self: center;
+                margin-right: 0;
+                margin-bottom: 20px
+            }
+          }
         }
-    }
-}
+      }
 
-#tns1 > .tns-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+      .slick-dots{
+        position: absolute;
+        bottom: -55px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        left: 50%;
+        transform: translateX(-50%);
 
-.tns-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        li{
+          width: 17px;
+          height: 17px;
 
-.tns-outer [aria-controls], .tns-outer [data-action]{
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    margin: 10px 7px;
+          border-radius: 50%;
+          list-style: none;
+          margin-right: 20px;
+          cursor: pointer;
+          border: 1px solid white;
+          background-color: transparent;
+          transition: 1s ease all;
+
+          &.slick-active{
+            background-color: white;
+          }
+
+          &:last-child{
+            margin-right: 0;
+          }
+
+          button{
+            display: none;
+          }
+        }
+      }
 }
