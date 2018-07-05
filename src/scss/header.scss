@@ -32,7 +32,10 @@ header{
   .logo-container{
     width: 49px;
     height: 49px;
-    background-color: lightgrey;
+    // background-color: lightgrey;
+    background-image: url('../img/logo.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   nav{

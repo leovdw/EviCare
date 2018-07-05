@@ -3,14 +3,25 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: #fff;
+
     h2 {
-        font-family: "Roboto";
-        font-weight: bold;
-        font-size: 33px;
+      text-align: center;
+      margin-top: 0;
+      color: #28328C;
+      font-weight: 700;
     }
     .form__subtitle{
-        width: 50%;
+        text-align: center;
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+        color: #AEAEAE;
         font-size: 16px;
+
+        @media (max-width: 720px) {
+          max-width: 90%;
+        }
     }
     div{
         display: flex;
@@ -19,11 +30,27 @@
         margin-bottom: 20px;
     }
     form{
-        width: 50%;
+      width: 90%;
+      max-width: 408px;
+      margin-top: 75px;
+      margin-bottom: 100px;
+
     }
     input, select{
         font-size: 22px;
-        width: 50%;
-        padding: 10px 0 10px 15px;
+        width: 100%;
+        padding: 10px 10px 10px 15px;
+        box-shadow: inset 1px 1px 3px 0 #CCD1D9;
+        border-radius: 3px;
+      	border: 1px solid #CCD1D9;
+        color: #AAB2BD
+    }
+    a{
+        text-align: center;
+        width: 100%;
+        border-radius: 3px;
+        padding: 15px;
+        background-color: #D8D8D8;
+        color: #FFF;
     }
 }

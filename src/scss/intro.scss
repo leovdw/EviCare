@@ -43,12 +43,15 @@
     }
 
     &:nth-of-type(1){
-    	border-radius: 3px;
-    	background-color: #42CF9F;
-      padding-right: 60px;
-      padding-left: 10px;
+    	border-radius: 30px;
+    	background-color: white;
+      padding-right: 70px;
+      padding-left: 25px;
       margin-right: 30px;
-      color: white;
+      color: #28328C;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 12px;
       width:200px;
 
       @media (max-width: 533px) {
@@ -64,8 +67,8 @@
         width: 51px;
         height: 100%;
         z-index: 1;
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
       }
       &:after{
         z-index: 4;
