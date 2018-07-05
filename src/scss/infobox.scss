@@ -68,12 +68,54 @@
     justify-content: space-between;
     width: 286px;
 
+    @media (max-width:630px) {
+      margin-top: 40px
+    }
+
+    &.display_patient{
+      &:nth-child(1){
+        & .section-infobox__single__img{
+          background-image: url('../img/docteur-qualifie-ico.svg');
+        }
+      }
+      &:nth-child(2){
+        & .section-infobox__single__img{
+          background-image: url('../img/confidentiel-securite-ico.svg');
+        }
+      }
+      &:nth-child(3){
+        & .section-infobox__single__img{
+          background-image: url('../img/cout-ico.svg');
+        }
+      }
+    }
+
+    &.display_medecin{
+      &:nth-child(1){
+        & .section-infobox__single__img{
+          background-image: url('../img/flexible-ico.svg');
+        }
+      }
+      &:nth-child(2){
+        & .section-infobox__single__img{
+          background-image: url('../img/complement-revenu-ico.svg');
+        }
+      }
+      &:nth-child(3){
+        & .section-infobox__single__img{
+          background-image: url('../img/sante-ameliore-ico.svg');
+        }
+      }
+    }
+
     &__img{
       width: 139px;
-      height: 139px;
-      background-color: #E2E2E2;
+      height: 80px;
+      // background-color: #E2E2E2;
       margin: 0 auto;
       margin-bottom: 15px;
+      background-repeat: no-repeat;
+      background-position: center;
     }
     &__title{
       h3{
@@ -90,10 +132,11 @@
     &__wraper{
       display: flex;
       justify-content: space-between;
-      max-width: 900px;
+      min-width: 900px;
       margin: 0 auto;
 
       @media (max-width: 950px) {
+        min-width: auto;
         flex-wrap: wrap;
         justify-content: center;
       }

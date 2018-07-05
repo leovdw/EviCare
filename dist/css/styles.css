@@ -87,7 +87,9 @@ header {
       text-decoration: none;
       padding: 14px 10px;
       border: 1px solid #28328C;
-      color: white; }
+      color: white;
+      width: 154px;
+      text-align: center; }
       @media (max-width: 730px) {
         header .btn-container a {
           width: 50%;
@@ -230,7 +232,7 @@ a {
     font-size: 57px;
     line-height: 79px;
     padding-bottom: 44px;
-    max-width: 625px; }
+    max-width: 677px; }
     @media (max-width: 706px) {
       .section-intro h1 {
         font-size: 43px;
@@ -257,7 +259,7 @@ a {
       padding-left: 10px;
       margin-right: 30px;
       color: white;
-      width: 149px; }
+      width: 200px; }
       @media (max-width: 533px) {
         .section-intro__btns:nth-of-type(1) {
           margin-right: 0; } }
@@ -280,7 +282,7 @@ a {
         left: calc(100% - (51px / 2));
         transform: translateX(-50%) translateY(-50%);
         width: 23px;
-        height: 15px;
+        height: 16px;
         background-position: center;
         background: url("../img/camera.svg");
         background-repeat: no-repeat; }
@@ -389,12 +391,28 @@ a {
     flex-direction: column;
     justify-content: space-between;
     width: 286px; }
+    @media (max-width: 630px) {
+      .section-infobox__single {
+        margin-top: 40px; } }
+    .section-infobox__single.display_patient:nth-child(1) .section-infobox__single__img {
+      background-image: url("../img/docteur-qualifie-ico.svg"); }
+    .section-infobox__single.display_patient:nth-child(2) .section-infobox__single__img {
+      background-image: url("../img/confidentiel-securite-ico.svg"); }
+    .section-infobox__single.display_patient:nth-child(3) .section-infobox__single__img {
+      background-image: url("../img/cout-ico.svg"); }
+    .section-infobox__single.display_medecin:nth-child(1) .section-infobox__single__img {
+      background-image: url("../img/flexible-ico.svg"); }
+    .section-infobox__single.display_medecin:nth-child(2) .section-infobox__single__img {
+      background-image: url("../img/complement-revenu-ico.svg"); }
+    .section-infobox__single.display_medecin:nth-child(3) .section-infobox__single__img {
+      background-image: url("../img/sante-ameliore-ico.svg"); }
     .section-infobox__single__img {
       width: 139px;
-      height: 139px;
-      background-color: #E2E2E2;
+      height: 80px;
       margin: 0 auto;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      background-repeat: no-repeat;
+      background-position: center; }
     .section-infobox__single__title h3 {
       text-align: center;
       margin: 0; }
@@ -404,10 +422,11 @@ a {
     .section-infobox__single__wraper {
       display: flex;
       justify-content: space-between;
-      max-width: 900px;
+      min-width: 900px;
       margin: 0 auto; }
       @media (max-width: 950px) {
         .section-infobox__single__wraper {
+          min-width: auto;
           flex-wrap: wrap;
           justify-content: center; } }
       @media (max-width: 626px) {
@@ -528,6 +547,9 @@ a {
     margin-top: 0;
     color: #28328C;
     font-weight: 700; }
+    @media (max-width: 364px) {
+      .section-about h2 {
+        width: 90%; } }
   .section-about p {
     text-align: center;
     max-width: 700px;
@@ -538,5 +560,55 @@ a {
     @media (max-width: 720px) {
       .section-about p {
         max-width: 90%; } }
+
+.form__coord {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .form__coord h2 {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 33px; }
+  .form__coord .form__subtitle {
+    width: 50%;
+    font-size: 16px; }
+  .form__coord div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; }
+  .form__coord form {
+    width: 50%; }
+  .form__coord input, .form__coord select {
+    font-size: 22px;
+    width: 50%;
+    padding: 10px 0 10px 15px; }
+
+footer {
+  background-color: #E2E2E2; }
+  footer .footer__core {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  footer .footer__core--item-one {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .footer__core--item-one div {
+      width: 50%; }
+    footer .footer__core--item-one p {
+      font-size: 14px;
+      font-family: 'Roboto';
+      font-weight: bold;
+      color: #535353; }
+  footer .footer__core--item-two {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; }
+    footer .footer__core--item-two div {
+      display: flex;
+      flex-direction: column;
+      width: 20%; }
 
 /*# sourceMappingURL=styles.css.map */
